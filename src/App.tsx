@@ -84,7 +84,7 @@ export default function App() {
             VibeHub <span className="font-sans not-italic font-light opacity-50">Cinematic</span>
           </h1>
           <p className="text-white/40 max-w-md mx-auto text-sm md:text-base font-light leading-relaxed">
-            A curated portal to next-generation creative tools powered by artificial intelligence and global inspiration.
+            A curated portal to next-generation creative tools powered by ALI MAKSUM.
           </p>
         </motion.div>
       </header>
