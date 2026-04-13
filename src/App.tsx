@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Youtube, Sparkles, Globe, Music, ArrowRight, Play } from "lucide-react";
+import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout } from "lucide-react";
 
 const apps = [
   {
@@ -34,6 +34,13 @@ const apps = [
     icon: Music,
     color: "from-amber-500/20 to-yellow-500/20",
     description: "Your personal AI companion for songwriting."
+  },
+  {
+    name: "Orchestra",
+    url: "https://orchestra-alimaksum.vercel.app",
+    icon: Layout,
+    color: "from-indigo-500/20 to-blue-500/20",
+    description: "Harmonize your creative workflow."
   }
 ];
 
