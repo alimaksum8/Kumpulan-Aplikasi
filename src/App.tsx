@@ -42,7 +42,7 @@ export default function App() {
     <div className="relative min-h-screen w-full flex flex-col items-center justify-center px-6 overflow-hidden">
       {/* Cinematic Background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-black" />
+        <div className="absolute inset-0 bg-[#0f172a]" />
         <motion.div 
           animate={{ 
             scale: [1, 1.2, 1],
@@ -90,40 +90,32 @@ export default function App() {
       </header>
 
       {/* Grid of Buttons */}
-      <main className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl relative z-10">
+      <main className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl relative z-10">
         {apps.map((app, index) => (
           <motion.a
             key={app.name}
             href={app.url}
             target="_top"
             rel="noreferrer"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            className={`group relative p-8 rounded-3xl glass glass-hover overflow-hidden flex flex-col justify-between h-64 text-left cursor-pointer w-full`}
+            whileHover={{ y: -2 }}
+            whileTap={{ y: 2 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="group relative flex items-center gap-4 p-4 rounded-2xl bg-purple-600 border-b-4 border-purple-800 shadow-lg hover:bg-purple-500 active:border-b-0 active:translate-y-1 transition-all duration-100"
           >
-            {/* Hover Background Glow */}
-            <div className={`absolute inset-0 bg-gradient-to-br ${app.color} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
+            <div className="relative z-10 w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <app.icon className="w-5 h-5 text-white" />
+            </div>
             
-            <div className="relative z-10">
-              <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                <app.icon className="w-6 h-6 text-white/80" />
-              </div>
-              <h2 className="text-2xl font-medium mb-2 group-hover:translate-x-1 transition-transform duration-500">
+            <div className="relative z-10 flex-1">
+              <h2 className="text-lg font-bold tracking-tight text-white drop-shadow-sm">
                 {app.name}
               </h2>
-              <p className="text-white/40 text-sm group-hover:text-white/60 transition-colors duration-500 max-w-[200px]">
-                {app.description}
-              </p>
             </div>
 
-            <div className="relative z-10 flex items-center justify-between mt-auto">
-              <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-semibold text-white/30 group-hover:text-white transition-colors duration-500">
-                Launch App <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-500" />
-              </div>
-              <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:border-white transition-all duration-500">
-                <Play className="w-4 h-4 text-white group-hover:text-black fill-current" />
-              </div>
+            <div className="relative z-10 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white transition-all duration-300">
+              <Play className="w-3 h-3 text-white group-hover:text-purple-600 fill-current ml-0.5" />
             </div>
           </motion.a>
         ))}
