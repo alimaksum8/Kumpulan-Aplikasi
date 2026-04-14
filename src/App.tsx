@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2 } from "lucide-react";
+import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search } from "lucide-react";
 
 const apps = [
   {
@@ -48,6 +48,13 @@ const apps = [
     icon: Mic2,
     color: "from-rose-500/20 to-pink-500/20",
     description: "Pure acoustic vibes and sounds."
+  },
+  {
+    name: "LyricLens v.2",
+    url: "https://lyriclens-alimaksum.vercel.app",
+    icon: Search,
+    color: "from-cyan-500/20 to-blue-500/20",
+    description: "Discover the meaning behind every word."
   }
 ];
 
@@ -116,7 +123,9 @@ export default function App() {
             whileHover={{ y: -2 }}
             whileTap={{ y: 2 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group relative flex items-center gap-4 p-4 rounded-2xl bg-purple-600 border-b-4 border-purple-800 shadow-lg hover:bg-purple-500 active:border-b-0 active:translate-y-1 transition-all duration-100"
+            className={`group relative flex items-center gap-4 p-4 rounded-2xl bg-purple-600 border-b-4 border-purple-800 shadow-lg hover:bg-purple-500 active:border-b-0 active:translate-y-1 transition-all duration-100 ${
+              index === apps.length - 1 && apps.length % 2 !== 0 ? "sm:col-span-2" : ""
+            }`}
           >
             <div className="relative z-10 w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <app.icon className="w-5 h-5 text-white" />
