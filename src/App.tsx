@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout } from "lucide-react";
+import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2 } from "lucide-react";
 
 const apps = [
   {
@@ -41,6 +41,13 @@ const apps = [
     icon: Layout,
     color: "from-indigo-500/20 to-blue-500/20",
     description: "Harmonize your creative workflow."
+  },
+  {
+    name: "Akustik",
+    url: "https://akustik-alimaksum.vercel.app",
+    icon: Mic2,
+    color: "from-rose-500/20 to-pink-500/20",
+    description: "Pure acoustic vibes and sounds."
   }
 ];
 
