@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search } from "lucide-react";
+import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search, BarChart2 } from "lucide-react";
 
 const apps = [
   {
@@ -55,6 +55,13 @@ const apps = [
     icon: Search,
     color: "from-cyan-500/20 to-blue-500/20",
     description: "Discover the meaning behind every word."
+  },
+  {
+    name: "Analizer Musik Target Luar",
+    url: "https://music-country-analyzer-indonesia.vercel.app/",
+    icon: BarChart2,
+    color: "from-indigo-500/20 to-violet-500/20",
+    description: "Analyze market targeting and music metrics."
   }
 ];
 
