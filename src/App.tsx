@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search, BarChart2, Video } from "lucide-react";
+import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search, BarChart2 } from "lucide-react";
 
 const apps = [
   {
@@ -62,13 +62,6 @@ const apps = [
     icon: BarChart2,
     color: "from-indigo-500/20 to-violet-500/20",
     description: "Analyze market targeting and music metrics."
-  },
-  {
-    name: "IMG2VDEO",
-    url: "https://opal.google/app/1PmrpHOaxgfuINgApFpHx_t5Of-QFe4UV",
-    icon: Video,
-    color: "from-red-500/20 to-rose-500/20",
-    description: "Transform your images into stunning cinematic videos."
   }
 ];
 
