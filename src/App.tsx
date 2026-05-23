@@ -74,7 +74,7 @@ const apps = [
 
 export default function App() {
   return (
-    <div className="relative min-h-screen w-full flex flex-col items-center justify-start py-16 md:py-24 px-6 overflow-y-auto">
+    <div className="relative min-h-screen w-full flex flex-col items-center justify-start py-16 md:py-24 px-6">
       {/* Cinematic Background */}
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[#0f172a]" />
