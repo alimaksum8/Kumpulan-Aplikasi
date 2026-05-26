@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search, BarChart2 } from "lucide-react";
+import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search, BarChart2, Headphones } from "lucide-react";
 
 const apps = [
   {
@@ -62,6 +62,13 @@ const apps = [
     icon: BarChart2,
     color: "from-indigo-500/20 to-violet-500/20",
     description: "Analyze market targeting and music metrics."
+  },
+  {
+    name: "Suno Pro Studio",
+    url: "https://sunopro-alimaksum.vercel.app/",
+    icon: Headphones,
+    color: "from-orange-500/20 to-red-500/20",
+    description: "Professional AI music production suite."
   }
 ];
 
