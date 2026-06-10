@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search, BarChart2, Headphones, ShieldCheck } from "lucide-react";
+import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search, BarChart2, Headphones, ShieldCheck, TrendingUp } from "lucide-react";
 
 const apps = [
   {
@@ -13,6 +13,13 @@ const apps = [
     icon: Youtube,
     color: "from-red-500/20 to-orange-500/20",
     description: "Elevate your video content to viral status."
+  },
+  {
+    name: "Go Viral",
+    url: "https://go-viraltube.vercel.app/",
+    icon: TrendingUp,
+    color: "from-pink-500/20 to-rose-500/20",
+    description: "Promote your content and go viral instantly."
   },
   {
     name: "VibeGen.AI",
