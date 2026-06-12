@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search, BarChart2, Headphones, ShieldCheck, TrendingUp } from "lucide-react";
+import { Youtube, Sparkles, Globe, Music, ArrowRight, Play, Layout, Mic2, Search, BarChart2, Headphones, ShieldCheck, TrendingUp, Image } from "lucide-react";
 
 const apps = [
   {
@@ -83,6 +83,13 @@ const apps = [
     icon: ShieldCheck,
     color: "from-blue-500/20 to-cyan-500/20",
     description: "Copyright-free lyric resources and validation."
+  },
+  {
+    name: "Mod Image",
+    url: "https://gemini.google.com/share/698cdd220804",
+    icon: Image,
+    color: "from-purple-500/20 to-pink-500/20",
+    description: "AI-enhanced image generator and editing tools."
   }
 ];
 
