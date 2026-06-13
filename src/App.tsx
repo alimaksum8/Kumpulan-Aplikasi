@@ -90,12 +90,19 @@ const apps = [
     icon: Image,
     color: "from-purple-500/20 to-pink-500/20",
     description: "AI-enhanced image generator and editing tools."
+  },
+  {
+    name: "Generate Thumbnail",
+    url: "https://gemini.google.com/share/5d1dd763e0cd",
+    icon: Sparkles,
+    color: "from-yellow-500/20 to-amber-500/20",
+    description: "AI-powered custom video thumbnail generator."
   }
 ];
 
 export default function App() {
   return (
-    <div className="relative min-h-screen w-full flex flex-col items-center justify-start py-16 md:py-24 px-6">
+    <div className="relative min-h-screen w-full flex flex-col items-center justify-start py-16 md:py-24 px-4 md:px-8">
       {/* Cinematic Background */}
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[#0f172a]" />
@@ -146,7 +153,7 @@ export default function App() {
       </header>
 
       {/* Grid of Buttons */}
-      <main className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl relative z-10">
+      <main className="grid grid-cols-4 gap-3 md:gap-6 w-full relative z-10">
         {apps.map((app, index) => (
           <motion.a
             key={app.name}
@@ -158,22 +165,16 @@ export default function App() {
             whileHover={{ y: -2 }}
             whileTap={{ y: 2 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`group relative flex items-center gap-4 p-4 rounded-2xl bg-purple-600 border-b-4 border-purple-800 shadow-lg hover:bg-purple-500 active:border-b-0 active:translate-y-1 transition-all duration-100 ${
-              index === apps.length - 1 && apps.length % 2 !== 0 ? "sm:col-span-2" : ""
-            }`}
+            className="group relative flex flex-col items-center justify-center text-center p-2.5 md:p-6 rounded-2xl bg-purple-600 border-b-4 border-purple-800 shadow-lg hover:bg-purple-500 active:border-b-0 active:translate-y-1 transition-all duration-100 min-h-[110px] md:min-h-[160px] w-full"
           >
-            <div className="relative z-10 w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <app.icon className="w-5 h-5 text-white" />
+            <div className="relative z-10 w-8 h-8 md:w-12 md:h-12 rounded-xl bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-2 md:mb-3 shrink-0">
+              <app.icon className="w-4 h-4 md:w-6 md:h-6 text-white" />
             </div>
             
-            <div className="relative z-10 flex-1">
-              <h2 className="text-lg font-bold tracking-tight text-white drop-shadow-sm">
+            <div className="relative z-10 flex-1 flex items-center justify-center">
+              <h2 className="text-[11px] sm:text-xs md:text-lg font-bold tracking-tight text-white leading-tight drop-shadow-sm line-clamp-2">
                 {app.name}
               </h2>
-            </div>
-
-            <div className="relative z-10 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white transition-all duration-300">
-              <Play className="w-3 h-3 text-white group-hover:text-purple-600 fill-current ml-0.5" />
             </div>
           </motion.a>
         ))}
