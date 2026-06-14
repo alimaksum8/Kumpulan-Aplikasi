@@ -97,6 +97,13 @@ const apps = [
     icon: Sparkles,
     color: "from-yellow-500/20 to-amber-500/20",
     description: "AI-powered custom video thumbnail generator."
+  },
+  {
+    name: "Generate Thumbnail V. 02",
+    url: "https://gemini.google.com/share/6dc7ab92df6d",
+    icon: Sparkles,
+    color: "from-orange-500/20 to-red-500/20",
+    description: "AI-powered custom video thumbnail generator V.02."
   }
 ];
 
