@@ -64,6 +64,13 @@ const apps = [
     description: "Discover the meaning behind every word."
   },
   {
+    name: "LyricLens v.3",
+    url: "https://lyriclens-v3.vercel.app/",
+    icon: Search,
+    color: "from-emerald-500/20 to-cyan-500/20",
+    description: "Next-level lyric insight and discovery tool."
+  },
+  {
     name: "Analizer Musik Target Luar",
     url: "https://music-country-analyzer-indonesia.vercel.app/",
     icon: BarChart2,
