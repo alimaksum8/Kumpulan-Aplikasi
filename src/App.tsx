@@ -71,6 +71,13 @@ const apps = [
     description: "Next-level lyric insight and discovery tool."
   },
   {
+    name: "Liric Anticopyright",
+    url: "https://anticopyright-alimaksum.vercel.app/",
+    icon: ShieldCheck,
+    color: "from-blue-500/20 to-cyan-500/20",
+    description: "Copyright-free lyric resources and validation."
+  },
+  {
     name: "Analizer Musik Target Luar",
     url: "https://music-country-analyzer-indonesia.vercel.app/",
     icon: BarChart2,
@@ -83,13 +90,6 @@ const apps = [
     icon: Headphones,
     color: "from-orange-500/20 to-red-500/20",
     description: "Professional AI music production suite."
-  },
-  {
-    name: "Liric Anticopyright",
-    url: "https://anticopyright-alimaksum.vercel.app/",
-    icon: ShieldCheck,
-    color: "from-blue-500/20 to-cyan-500/20",
-    description: "Copyright-free lyric resources and validation."
   },
   {
     name: "Mod Image",
