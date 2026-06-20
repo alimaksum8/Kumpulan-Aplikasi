@@ -71,6 +71,13 @@ const apps = [
     description: "Next-level lyric insight and discovery tool."
   },
   {
+    name: "Lyricslow",
+    url: "https://pembuat-stylemusik.vercel.app/",
+    icon: Music,
+    color: "from-blue-500/20 to-purple-500/20",
+    description: "Slow music and lyric creation tool."
+  },
+  {
     name: "Liric Anticopyright",
     url: "https://anticopyright-alimaksum.vercel.app/",
     icon: ShieldCheck,
