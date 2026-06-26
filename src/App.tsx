@@ -71,6 +71,13 @@ const apps = [
     description: "Next-level lyric insight and discovery tool."
   },
   {
+    name: "Style POP",
+    url: "https://lyriclens-pop-v-01.vercel.app/",
+    icon: Search,
+    color: "from-pink-500/20 to-purple-500/20",
+    description: "Pop style lyric lens."
+  },
+  {
     name: "Lyricslow",
     url: "https://pembuat-stylemusik.vercel.app/",
     icon: Music,
