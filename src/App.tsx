@@ -57,6 +57,13 @@ const apps = [
     description: "Pure acoustic vibes and sounds."
   },
   {
+    name: "LyricLens Ori",
+    url: "https://smart-lyric-vercel.vercel.app/",
+    icon: Search,
+    color: "from-blue-500/20 to-cyan-500/20",
+    description: "Original lyric insight tool."
+  },
+  {
     name: "LyricLens v.2",
     url: "https://lyriclens-alimaksum.vercel.app",
     icon: Search,
