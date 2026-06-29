@@ -64,6 +64,13 @@ const apps = [
     description: "Original lyric insight tool."
   },
   {
+    name: "LyricLens NewVersion",
+    url: "https://smart-lyric-new.vercel.app/",
+    icon: Search,
+    color: "from-teal-500/20 to-emerald-500/20",
+    description: "Next-generation smart lyric viewer and helper."
+  },
+  {
     name: "LyricLens v.2",
     url: "https://lyriclens-alimaksum.vercel.app",
     icon: Search,
