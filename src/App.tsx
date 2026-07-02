@@ -57,6 +57,20 @@ const apps = [
     description: "Pure acoustic vibes and sounds."
   },
   {
+    name: "Lagu Mandarin",
+    url: "https://mandarin-liric.vercel.app/",
+    icon: Music,
+    color: "from-red-500/20 to-rose-500/20",
+    description: "Traditional and modern Mandarin song lyrics portal."
+  },
+  {
+    name: "Lagu Jawa",
+    url: "https://lirik-jawa.vercel.app/",
+    icon: Music,
+    color: "from-amber-500/20 to-orange-500/20",
+    description: "Traditional and modern Javanese song lyrics portal."
+  },
+  {
     name: "LyricLens Ori",
     url: "https://smart-lyric-vercel.vercel.app/",
     icon: Search,
