@@ -106,6 +106,20 @@ const apps = [
     description: "Pop style lyric lens."
   },
   {
+    name: "Style Anggis Devaki",
+    url: "https://anggis-devaki-stylev01.vercel.app",
+    icon: Music,
+    color: "from-pink-500/20 to-rose-500/20",
+    description: "Custom music style explorer for Anggis Devaki."
+  },
+  {
+    name: "Anggis Dvaki vs Rheka Restu",
+    url: "https://anggisdevaki-rhekarestu-stylev02.vercel.app",
+    icon: Music,
+    color: "from-purple-500/20 to-indigo-500/20",
+    description: "Music style match-up and collaboration platform."
+  },
+  {
     name: "Lyricslow",
     url: "https://pembuat-stylemusik.vercel.app/",
     icon: Music,
